@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 7000px;
+    display: block;
+    position: absolute;
+    width: 100%;
+   
+}
+
+.header { 
+	height:750px;
+	position:absolute;
+}
+.ractangle { 
+	background-color:rgba(255, 90.0999216735363, 90.0999216735363, 1);
+	width:1920px;
+	height:151px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cakes { 
+	color:rgba(0, 165.00000536441803, 165.00000536441803, 1);
+	width:759px;
+	height:343px;
+	position:absolute;
+	left:156px;
+	top:407px;
+	font-family:Poiret One;
+	text-align:left;
+	font-size:140px;
+	letter-spacing:0;
+}
+.e31_19 { 
+	color:rgba(255, 255, 255, 1);
+	width:99px;
+	height:52px;
+	position:absolute;
+	left:278px;
+	top:49px;
+    font-family:Poiret One;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.e31_20 { 
+	color:rgba(255, 255, 255, 1);
+	width:169px;
+	height:52px;
+	position:absolute;
+	left:1361px;
+	top:49px;
+	font-family:Poiret One;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.e31_21 { 
+	color:rgba(255, 255, 255, 1);
+	width:140px;
+	height:52px;
+	position:absolute;
+	left:741px;
+	top:49px;
+    font-family:Poiret One;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.e43_5 { 
+	color:rgba(255, 255, 255, 1);
+	width:138px;
+	height:52px;
+	position:absolute;
+	left:490px;
+	top:49px;
+    font-family:Poiret One;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.e31_22 { 
+	color:rgba(255, 255, 255, 1);
+	width:254px;
+	height:52px;
+	position:absolute;
+	left:994px;
+	top:49px;
+    font-family:Poiret One;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.e31_23 { 
+	color:rgba(255, 255, 255, 1);
+	width:151px;
+	height:52px;
+	position:absolute;
+	left:1696px;
+	top:49px;
+    font-family:Poiret One;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.logo { 
+	width:125px;
+	height:125px;
+	position:absolute;
+	left:46px;
+	top:5px;
+	background-image:url(images/cake_icon_2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+.e116_258 { 
+	height:434.7369689941406px;
+    bottom: 0;
+    position:absolute;
+}
+.e31_49 { 
+	width:1920px;
+	height:434.7369689941406px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e31_50 { 
+	background-color:rgba(137.00000703334808, 145.00000655651093, 163.00000548362732, 1);
+	width:1920px;
+	height:434.7369689941406px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e31_51 { 
+	color:rgba(255, 255, 255, 1);
+	width:647px;
+	height:71.55271911621094px;
+	position:absolute;
+	left:157px;
+	top:65px;
+	font-family:Poiret One;
+	text-align:left;
+	font-size:48px;
+	letter-spacing:0;
+}
+.e31_52 { 
+	color:rgba(255, 255, 255, 1);
+	width:444px;
+	height:88.89883422851562px;
+	position:absolute;
+	left:157px;
+	top:305.181640625px;
+	font-family:Poiret One;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.e31_53 { 
+	color:rgba(255, 255, 255, 1);
+	width:457px;
+	height:71.55271911621094px;
+	position:absolute;
+	left:157px;
+	top:196px;
+	font-family:Poiret One;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.e116_249 { 
+	width:63px;
+	height:63.96379470825195px;
+	position:absolute;
+	left:73px;
+	top:305.181640625px;
+	background-image:url(images/image_7.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e116_247 { 
+	width:50px;
+	height:64px;
+	position:absolute;
+	left:80px;
+	top:187px;
+	background-image:url(images/image_6.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e116_245 { 
+	width:48px;
+	height:57px;
+	position:absolute;
+	left:81px;
+	top:65px;
+	background-image:url(images/image_5.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e116_259 { 
+	width:589px;
+	height:102px;
+	position:absolute;
+	left:1147px;
+	top:167px;
+}
+.e116_253 { 
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:163px;
+	top:2px;
+	background-image:url(images/image_9.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e116_251 { 
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/image_8.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e116_255 { 
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:326px;
+	top:2px;
+	background-image:url(images/image_10.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e116_257 { 
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:489px;
+	top:2px;
+	background-image:url(images/image_11.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
