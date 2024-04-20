@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 7000px;
+    height: fit-content;
     display: block;
     position: absolute;
     width: 100%;
@@ -12,6 +12,7 @@ nav {
 	color:rgba(255, 255, 255, 1);
 	font-family:Poiret One;
 	font-size:34px;
+	font-weight: bold;
   }
 
 .header { 
@@ -27,9 +28,8 @@ nav {
 }
 .cakes { 
 	color:rgba(0, 165.00000536441803, 165.00000536441803, 1);
-	width:759px;
+	width:309px;
 	height:343px;
-	position:absolute;
 	left:156px;
 	top:407px;
 	font-family:Poiret One;
@@ -47,11 +47,15 @@ nav {
 	letter-spacing:0;
 }
 
+.footer{
+	position: relative;
+
+}
 .nav-item {
 	margin-right: 30px
 }
 .e31_20 { 
-	color:rgba(255, 255, 255, 1);
+	color:rgb(74, 8, 8);
 	font-family:Poiret One;
 	font-size:34px;
 }
@@ -109,16 +113,59 @@ nav {
 	position:absolute;
 	left:46px;
 	top:5px;
-	background-image:url(images/cake_icon_2.png);
+	background-image:url(images/cake_icon_2.png); 
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 
+footer {
+	background-color:rgb(137.00000703334808, 145.00000655651093, 163.00000548362732, 1);
+}
+.footer h4 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 3px;
+	font-family:Poiret One;
+	font-size: larger;
+	font-weight: bold;
+}
 
+.footer a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footer a, .footer li {
+	color: #ffffff;
+	font-family:Poiret One;
+	font-size: larger;
+}
+
+.footer li a {
+	display: block;
+}
+.footer-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}
+
+
+
+
+/*
 .e116_258 { 
 	height:434.7369689941406px;
     bottom: 0;
     position:absolute;
+	width:100%;
 }
 .e31_49 { 
 	width:1920px;
@@ -129,7 +176,7 @@ nav {
 }
 .e31_50 { 
 	background-color:rgba(137.00000703334808, 145.00000655651093, 163.00000548362732, 1);
-	width:1920px;
+	width:100%;
 	height:434.7369689941406px;
 	position:absolute;
 	left:0px;
@@ -248,3 +295,4 @@ nav {
 	background-repeat:no-repeat;
 	background-size:cover;
 }
+*/
