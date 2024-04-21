@@ -7,6 +7,7 @@ body {
     width: 100%;
    
 }
+/*
 nav {
 	padding-left: 195px;
 	color:rgba(255, 255, 255, 1);
@@ -25,18 +26,20 @@ nav {
 	position:relative;
 	left:0px;
 	top:0px;
-}
+} */
 .cakes { 
 	color:rgba(0, 165.00000536441803, 165.00000536441803, 1);
 	width:100%;
 	height:40dvi;
-	left:156px;
-	top:407px;
+	left:10dvi;
+	top:15dvi;
 	font-family:Poiret One;
 	text-align:left;
-	font-size:140px;
+	font-size:10dvi;
+	font-weight: bolder;
 	letter-spacing:0;
 }
+/*
 .header_text_component {
 	color:rgba(255, 255, 255, 1);
 	position:absolute;
@@ -45,14 +48,56 @@ nav {
 	text-align:left;
 	font-size:34px;
 	letter-spacing:0;
+} */
+#navbarSupportedContent{
+	background-color:rgba(255, 90.0999216735363, 90.0999216735363);
 }
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.nav-item{
+	font-family:Poiret One;
+	text-align:center;
+	font-size:19px;
+	padding-left: 38px;
+	
+}
+.top-menu li a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	height: 1px;
+	transition: all .3s;
+	transform: scale(0);
+
+}
+
+.top-menu li a:hover::after {
+	transform: scale(1);
+}
+
+.modal-body img {
+	max-width: 100px;
+	height:20dvi;
+}
+
 
 .footer{
 	position: relative;
 
 }
 .nav-item {
-	margin-right: 30px
+	margin-left: 70px;
 }
 .e31_20 { 
 	color:rgb(74, 8, 8);
@@ -108,11 +153,11 @@ nav {
 	letter-spacing:0;
 }
 .logo { 
-	width:105px;
-	height:105px;
+	width:50px;
+	height:50px;
 	position:absolute;
-	left:46px;
-	top:5px;
+	left:43px;
+	top:4px;
 	background-image:url(images/cake_icon_2.png); 
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -125,14 +170,14 @@ nav {
 }
 
 .cake1 {
-	height:700px;
+	height:45dvi;
 	width: 100dvi;
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-image:url(images/cake1.jpeg); 
 }
 .cake2 {
-	height:700px;
+	height:45dvi;
 	width: 100dvi;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -140,7 +185,7 @@ nav {
 	
 }
 .cake3 {
-	height:700px;
+	height:45dvi;
 	width: 100dvi;
 	background-repeat:no-repeat;
 	background-size:cover;
