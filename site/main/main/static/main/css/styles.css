@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+button{
+  font-size: 50px;
+  background-color: rgba(173, 92, 10, 0.462);
+  border-radius: 0.5dvi;
+  font-family: Poiret One;
+}
+.button-text {
+    padding: 10px 20px; /* Отступы внутри кнопки */
+}
