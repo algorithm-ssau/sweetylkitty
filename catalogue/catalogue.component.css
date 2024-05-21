@@ -16,9 +16,6 @@ img {
 	height: auto;
 }
 
-section {
-	padding: 50px 0;
-}
 
 a {
 	color: #111;
@@ -94,6 +91,25 @@ a:hover {
 	overflow: hidden;
 }
 
+h1, p {
+	font-family: Poiret One;
+	color: #ee6e73;
+	padding-left: 5dvi;
+	font-size:10dvi;
+}
+p {
+	font-size:4.5dvi;
+}
+
+h1 {
+	color:rgba(0, 165.00000536441803, 165.00000536441803, 1);
+    width:100%;
+    height:fit-content;
+    text-align:left;
+    
+    font-weight: bolder;
+    letter-spacing:0;
+}
 .product-thumb img {
     width: 100%;
     height: 100%;
