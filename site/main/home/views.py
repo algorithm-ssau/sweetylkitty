@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request, "main/main-menu.component.html")
+    return render(request, "swetty-kitty\src\index.html")
 
 
 def basket(request):
