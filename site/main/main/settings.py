@@ -55,7 +55,7 @@ ROOT_URLCONF = 'main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'main\\templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'swetty-kitty\\src\\app')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +119,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "main/static"
+    BASE_DIR / "swetty-kitty\\src\\app"
 ]
 
 # Default primary key field type

@@ -20,14 +20,14 @@
     width: 100dvi;
     background-repeat:no-repeat;
     background-size:cover;
-    background-image:url(/site/main/main/static/main/images/cake1.jpeg);
+    background-image:url(/assets/cake1.jpeg); 
   }
   .cake2 {
     height:45dvi;
     width: 100dvi;
     background-repeat:no-repeat;
     background-size:cover;
-    background-image:url(/site/main/main/static/main/images/cake2.jpg);
+    background-image:url(/assets/cake2.jpg); 
     
   }
   .cake3 {
@@ -35,6 +35,6 @@
     width: 100dvi;
     background-repeat:no-repeat;
     background-size:cover;
-    background-image:url(/site/main/main/static/main/images/cake3.jpg);
+    background-image:url(/assets/cake3.jpg); 
     
   }

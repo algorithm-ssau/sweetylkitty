@@ -55,7 +55,7 @@ body {
 	height:50px;
 	position:relative;
     left: 20px;
-	background-image:url(/site/main/main/static/main/images/cake_icon_2.png);
+	background-image:url(/assets/cake_icon_2.png); 
 	background-repeat:no-repeat;
 	background-size:cover;
     border-radius: 0;
