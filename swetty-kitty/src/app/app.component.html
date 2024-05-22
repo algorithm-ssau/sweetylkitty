@@ -16,23 +16,18 @@
           <a class="nav-link" routerLink="main-menu">Главное</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacts">Контакты</a>
+          <a class="nav-link" routerLink="reviews">Отзывы</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="reviews">Отзывы</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="catalogue">Каталог</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="configurator">Конфигуратор</a>
+          <a class="nav-link" routerLink="catalogue">Каталог</a>
         </li>
       </ul>
 
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
+          
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="far fa-user"></i></a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><app-form-order></app-form-order>
           </ul>
         </li>
 
@@ -49,7 +44,7 @@
 
 
 <!-- подвал-->
-  <footer style="padding-top: 30px;">
+  <footer style="padding-top: 30px;" id="contacts">
     <section class="footer">
         <div class="container">
         <div class="row">
@@ -58,7 +53,6 @@
             <ul class="list-unstyled">
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Контакты</a></li>
-                <li><a href="#">Конфигуратор</a></li>
                 <li><a href="#">Оплата и доставка</a></li>
 
             </ul>
