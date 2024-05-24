@@ -1,6 +1,6 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, Output, EventEmitter } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 export class User {
@@ -30,7 +30,6 @@ export class ReviewsChildComponent {
   addUser() {
     this.console_log();
     this.user.push(new User(this.user_name, this.user_email, this.user_phone));
-    this.user_name = '';
   }
 
   onNameChange(): void {
