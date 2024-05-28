@@ -1,9 +1,14 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { InMemoryScrollingFeature, InMemoryScrollingOptions, provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-
-export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()]
+const scrollConfig: InMemoryScrollingOptions = {
+  scrollPositionRestoration: 'top',
 };
+const inMemoryScrollingFeature: InMemoryScrollingFeature =
+  withInMemoryScrolling(scrollConfig);
+export const appConfig: ApplicationConfig = {
+  providers: [provideRouter(routes, inMemoryScrollingFeature), provideClientHydration()]
+};
+
