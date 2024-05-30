@@ -1,6 +1,6 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component} from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ReviewsChildComponent } from '../reviews-child/reviews-child.component';
 
 

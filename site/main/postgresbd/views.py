@@ -28,18 +28,17 @@ def rewiew_data(request):
          #   status = status.HTTP_404_NOT_FOUND,
         #)
     if request.method == 'GET':
-        rewiew = Rewiew.objects.all()
-        
+        reviews = Rewiew.objects.all()
         title = request.GET.get('title', None)
         if title is not None:
-            rewiew = rewiew.filter(title__icontains=title)
-        
-        tutorials_serializer = RewiewSerializer(rewiew, many=True)
-        return JsonResponse(tutorials_serializer.data, safe=False)
+            reviews = reviews.filter(name__icontains=title)
+        reviews_serializer = RewiewSerializer(reviews, many=True)
+        return JsonResponse(reviews_serializer.data, safe=False)
 
-    if request.method == 'POST':
-        rewiew_data = JSONParser().parse(request)
-        rewiew_serializer = RewiewSerializer(data=rewiew_data)
-        if rewiew_serializer.is_valid():
-            rewiew_serializer.save()
-            return JsonResponse(rewiew_serializer.data, status=status.HTTP_201_CREATED)
+    elif request.method == 'POST':
+        review_data = JSONParser().parse(request)
+        review_serializer = RewiewSerializer(data=review_data)
+        if review_serializer.is_valid():
+            review_serializer.save()
+            return JsonResponse(review_serializer.data, status=status.HTTP_201_CREATED)
+        return JsonResponse(review_serializer.errors, status=status.HTTP_400_BAD_REQUEST)

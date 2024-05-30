@@ -1,7 +1,7 @@
-import { NgFor, NgIf } from '@angular/common';
 import { Component, Output, EventEmitter } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NgIf, NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 export class User {
   constructor(
@@ -14,9 +14,9 @@ export class User {
 @Component({
   selector: 'app-reviews-child',
   standalone: true,
-  imports: [ReactiveFormsModule, NgIf, NgFor, FormsModule],
+  imports: [FormsModule, NgIf, NgFor, HttpClientModule],
   templateUrl: './reviews-child.component.html',
-  styleUrl: './reviews-child.component.css'
+  styleUrls: ['./reviews-child.component.css']
 })
 export class ReviewsChildComponent {
   user: User[] = [];
@@ -24,12 +24,29 @@ export class ReviewsChildComponent {
   user_email = '';
   user_phone = '';
 
-  @Output()
-  onClicked = new EventEmitter<string>();
+  constructor(private http: HttpClient) {}
+
+  @Output() onClicked = new EventEmitter<string>();
 
   addUser() {
-    this.console_log();
-    this.user.push(new User(this.user_name, this.user_email, this.user_phone));
+    if (this.user_name && this.user_email && this.user_phone) {
+      this.console_log();
+      this.user.push(new User(this.user_name, this.user_email, this.user_phone));
+      this.http.post('postgresbd/rewiew', {
+        name: this.user_name,
+        email: this.user_email,
+        phone: this.user_phone
+      }).subscribe({
+        next: response => {
+          console.log('Review submitted successfully', response);
+        },
+        error: error => {
+          console.error('Error submitting review', error);
+        }
+      });
+    } else {
+      console.error('Form is invalid');
+    }
   }
 
   onNameChange(): void {
@@ -38,7 +55,7 @@ export class ReviewsChildComponent {
 
   console_log() {
     this.onClicked.emit(
-      this.user_name + ' ' + this.user_email + '' + this.user_phone
+      this.user_name + ' ' + this.user_email + ' ' + this.user_phone
     );
   }
 }
