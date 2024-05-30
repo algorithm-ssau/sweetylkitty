@@ -32,10 +32,10 @@ export class ReviewsChildComponent {
     if (this.user_name && this.user_email && this.user_phone) {
       this.console_log();
       this.user.push(new User(this.user_name, this.user_email, this.user_phone));
-      this.http.post('postgresbd/rewiew', {
+      this.http.post('http://127.0.0.1:8000/postgresbd/rewiews/', {
         name: this.user_name,
         email: this.user_email,
-        phone: this.user_phone
+        description: this.user_phone
       }).subscribe({
         next: response => {
           console.log('Review submitted successfully', response);

@@ -1,9 +1,24 @@
-<app-reviews-child (onClicked)="catchClick($any($event))" style="position: absolute;padding-top: 30dvi;padding-left: 60dvi;"></app-reviews-child>
+<app-reviews-child (onClicked)="catchClick($any($event))" style="position: absolute; padding-top: 30dvi; padding-left: 60dvi;"></app-reviews-child>
+
+<div class="form-container">
+    <form [formGroup]="reviewForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="json" id="name" formControlName="name" required>
+        </div>
+        <div class="form-group">
+            <label for="review">Отзыв</label>
+            <textarea id="review" formControlName="review" rows="4" required></textarea>
+        </div>
+    </form>
+</div>
 
 <div class="cup">
-    <div  class="cup-text"><pre style="font-family:Poiret One;padding-top: 55dvi;padding-left: 4dvi; color: #F7F1AF;">
-ОСТАВЬТЕ СВОЙ 
-ЧЕСТНЫЙ ОТЗЫВ 
-ПРЯМО СЕЙЧАС!</pre></div>
-
+    <div class="cup-text">
+        <pre style="font-family: 'Poiret One'; padding-top: 55dvi; padding-left: 4dvi; color: #F7F1AF;">
+ОСТАВЬТЕ СВОЙ
+ЧЕСТНЫЙ ОТЗЫВ
+ПРЯМО СЕЙЧАС!
+        </pre>
+    </div>
 </div>

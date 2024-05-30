@@ -4,7 +4,12 @@
   body {
     font-size: 14px;
   }
-  
+  .form-container {
+    max-width: 100px;
+    margin: 100px;
+    padding: 20px;
+    
+    }
   .v111_84 {
     width: 58px;
     height: 45px;
