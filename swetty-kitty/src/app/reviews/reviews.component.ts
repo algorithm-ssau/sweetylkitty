@@ -13,6 +13,7 @@ import { ReviewsChildComponent } from '../reviews-child/reviews-child.component'
 })
 export class ReviewsComponent implements OnInit {
   reviewForm: FormGroup;
+  reviewData: any; // Содержит данные об отзыве
 
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.reviewForm = this.fb.group({
@@ -29,15 +30,21 @@ export class ReviewsComponent implements OnInit {
     this.http.get<any>("http://127.0.0.1:8000/postgresbd/rewiews/")
       .subscribe({
         next: data => {
-          this.reviewForm.patchValue({
-            name: data.name,
-            review: data.description
-          });
+          this.reviewData = data[0]; // Первый элемент массива, предполагая, что он содержит нужный отзыв
+          this.setFormValues();
         },
         error: error => {
           console.error('Error fetching review:', error);
         }
   });
+  }
+
+  setFormValues(): void {
+    // Устанавливаем значения полей формы из данных отзыва
+    this.reviewForm.patchValue({
+      name: this.reviewData.name,
+      review: this.reviewData.description
+    });
   }
 
   handleFormGroupChange(event: string): void {
