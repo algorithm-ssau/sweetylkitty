@@ -3,12 +3,16 @@
 <div class="form-container">
     <form [formGroup]="reviewForm" (ngSubmit)="submitForm()">
         <div class="form-group">
-            <label for="name">Имя</label>
-            <input type="json" id="name" formControlName="name" required>
+            <div style="font-family: 'Poiret One'; position: absolute; padding-top: 5dvi; padding-left: 4dvi; color: #000000;">
+                <label for="name" >Имя</label>
+                <input type="json" id="name" formControlName="name" required>
+            </div>
         </div>
         <div class="form-group">
-            <label for="review">Отзыв</label>
-            <textarea id="review" formControlName="review" rows="4" required></textarea>
+            <div style="font-family: 'Poiret One'; position: absolute; padding-top: 13dvi; padding-left: 2dvi; color: #000000;">
+                <label for="review">Отзыв</label>
+                <textarea id="review" formControlName="review" rows="4" required></textarea>
+            </div>
         </div>
     </form>
 </div>

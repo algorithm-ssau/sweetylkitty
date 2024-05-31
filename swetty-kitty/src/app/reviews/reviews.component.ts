@@ -30,7 +30,7 @@ export class ReviewsComponent implements OnInit {
     this.http.get<any>("http://127.0.0.1:8000/postgresbd/rewiews/")
       .subscribe({
         next: data => {
-          this.reviewData = data[0]; // Первый элемент массива, предполагая, что он содержит нужный отзыв
+          this.reviewData = data[data.length - 1]; // Первый элемент массива, предполагая, что он содержит нужный отзыв
           this.setFormValues();
         },
         error: error => {
