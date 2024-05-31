@@ -2,24 +2,28 @@
     <div class="container" style="margin-top: 7dvi;">
         <div class="row">
             
-            <div class="col-md-3">
-                <div class="list-group ">
+            <div class="col-md-3" >
+                    <div class="list-group" id="category" *ngFor="let category of categories">
+                        <button (click)="changeCategory(category.id)" class="list-group-item list-group-action list-group-dark" [ngClass]="{'active': activeCategoryname== category.name, 'non-active': activeCategoryname!=category.name}" style="font-size: 12px;">{{category.name}}</button>
+                    </div>
+                <!-- <div class="list-group " id="category">
                     <a href="#demo" class="list-group-item list-group-action list-group-dark" style="font-size: 12px;">Бенто-торт</a>
                     <a href="#movies" class="list-group-item list-group-action" style="font-size: 12px;">Торты "С Днем Рождения!"</a>
                     <a href="#actor-info" class="list-group-item list-group-action" style="font-size: 12px;">Торты кубики</a>
                     <a href="#demo" class="list-group-item list-group-action list-group-dark" style="font-size: 12px;">Торты на праздники</a>
                     <a href="#movies" class="list-group-item list-group-action" style="font-size: 12px;">Муссовые торты</a>
                     <a href="#actor-info" class="list-group-item list-group-action" style="font-size: 12px;">Свадебные торты</a>
-                </div>
+                </div> -->
             </div>
             <div class="col-md-3">
-                <div class="product-card ">
+                <div class="product-card " *ngFor="let cake of cakes1">
                     <div class="product-thumb">
-                        <a href="#"><img src="assets/category-bento.jpg" alt=""></a>
+                        <a href="#"><img src={{cake.img}} alt=""></a>
                     </div>
                     <div class="product-details">
-                        <h4><a href="#">Бенто-торт</a></h4>
-                        <p>Хотите невероятный вкус? да</p>
+                        <h4><a href="#">{{cake.name}}</a></h4>
+                        <p>{{cake.description}}</p>
+                        <p>{{cake.cost}}</p>
                         <div class="product-bottom-details d-flex justify-content-between">
                             
                             <div class="product-links">
@@ -31,13 +35,14 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="product-card ">
+                <div class="product-card " *ngFor="let cake of cakes2">
                     <div class="product-thumb">
-                        <a href="#"><img src="assets/category-birthday.jpg" alt=""></a>
+                        <a href="#"><img src={{cake.img}} alt=""></a>
                     </div>
                     <div class="product-details">
-                        <h4><a href="#">Торты "С Днем Рождения!"</a></h4>
-                        <p>Порадуйте именинника невероятным вкусом!</p>
+                        <h4><a href="#">{{cake.name}}</a></h4>
+                        <p>{{cake.description}}</p>
+                        <p>{{cake.cost}}</p>
                         <div class="product-bottom-details d-flex justify-content-between">
                             
                             <div class="product-links">
@@ -48,6 +53,27 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="product-card " *ngFor="let cake of cakes3">
+                    <div class="product-thumb">
+                        <a href="#"><img src={{cake.img}} alt=""></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">{{cake.name}}</a></h4>
+                        <p>{{cake.description}}</p>
+                        <p>{{cake.cost}}</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            
+                            <div class="product-links">
+                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            
             <div class="col-md-3">
                 <div class="product-card ">
                     <div class="product-thumb">
@@ -124,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="container">

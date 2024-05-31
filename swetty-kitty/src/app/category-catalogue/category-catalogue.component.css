@@ -182,3 +182,12 @@ a:hover {
 	font-size: 20px;
 }
 /* Footer */
+
+
+.active{
+	background-color: #ee6e73;
+	border: 0;
+}
+.non-active{
+	background-color: #ffffff;
+}

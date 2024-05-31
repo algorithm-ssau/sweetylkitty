@@ -11,7 +11,6 @@ from postgresbd.serializers import *
 
 from collections import namedtuple
 
-
 nt = namedtuple("object", ["model", "serializers"])
 pattern = {
     "rewiew"  : nt(Rewiew, RewiewSerializer),
