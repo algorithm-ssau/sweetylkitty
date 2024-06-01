@@ -18,20 +18,21 @@
 
 # 🤔 Установка и запуск :
 1. Склонируйте репозиторий к себе 
+Вставьте в командную строку
 ```
-Вставьте в командную строку git clone https://github.com/algorithm-ssau/sweetylkitty.git
+ git clone https://github.com/algorithm-ssau/sweetylkitty.git
 ```
 2. Установите NodeJS
 ```
 https://nodejs.org/en
 ```
 3. Установите необходимые пакеты python
-
-* pip install -U drf-yasg
-* pip install djangorestframework
-* pip install psycopg2
-* pip install django-cors-headers
-
+```
+ pip install -U drf-yasg
+ pip install djangorestframework
+ pip install psycopg2
+ pip install django-cors-headers
+```
 4. Скачайте PostgresSQL
 
 * Создайте базу данных swettie-kitty
