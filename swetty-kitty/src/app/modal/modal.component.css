@@ -1,17 +1,25 @@
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    outline: 0;
-    background: rgba(0, 0, 0, 0.5);
+.modal-dialog {
+    max-width: 40%; /* Установите максимальную ширину модального окна */
+    margin: 1rem auto; /* Центрирование модального окна */
+    max-height: 40%;
+  }
+
+  .modal-body {
+    text-align: center; /* Разместить содержимое по центру */
+  }
+
+  .modal-body p {
+    font-size: 28px; /* Установите желаемый размер шрифта для текста описания */
+  }
+
+  .modal-body p:last-child {
+    text-align: left; /* Оставить цену слева */
   }
   
-  .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 40%; /* При ширине экрана больше 576px, уменьшите максимальную ширину */
+      max-height: 20%;
+    }
   }
   
