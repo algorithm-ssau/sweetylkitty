@@ -12,9 +12,7 @@ import { CategoryService } from '../services/category.service';
 })
 export class CatalogueComponent {
 
-  constructor(private categoryService: CategoryService) {
-
-  }
+  constructor(private categoryService: CategoryService) { }
 
   setCategory(id: number) {
     this.categoryService.changeCategory(id);
