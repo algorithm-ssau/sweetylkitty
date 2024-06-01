@@ -4,15 +4,15 @@
         
         <div class="col-md-3">
           <div class="list-group" id="category" *ngFor="let category of categories">
-            <button (click)="changeCategory(category.id)" class="list-group-item list-group-action list-group-dark" [ngClass]="{'active': activeCategoryname == category.name, 'non-active': activeCategoryname != category.name}" style="font-size: 12px;">
-              {{ category.name }}
+           <button (click)="changeCategory(category.id)" class="list-group-item list-group-action list-group-dark" [ngClass]="{'active': activeCategoryname == category.name, 'non-active': activeCategoryname != category.name}" style="font-size: 17px; color: #000; ">
+            <b>  {{ category.name }} </b>
             </button>
           </div>
         </div>
         <div class="col-md-3">
           <div class="product-card" (click)="selectCake(cake)" *ngFor="let cake of cakes1">
             <div class="product-thumb">
-              <img [src]="cake.img" alt="">
+              <img [src]="cake.img" alt="" style=" width: 100%; height: 20dvi; object-fit: cover;">
             </div>
             <div class="product-details">
               <h4>{{ cake.name }}</h4>
@@ -30,7 +30,7 @@
         <div class="col-md-3" >
             <div class="product-card" (click)="selectCake(cake)" *ngFor="let cake of cakes2">
               <div class="product-thumb">
-                <img [src]="cake.img" alt="">
+                <img [src]="cake.img" alt="" style=" width: 100%; height: 20dvi; object-fit: cover;">
               </div>
               <div class="product-details">
                 <h4>{{ cake.name }}</h4>
@@ -48,7 +48,7 @@
           <div class="col-md-3" >
             <div class="product-card" (click)="selectCake(cake)" *ngFor="let cake of cakes3">
               <div class="product-thumb">
-                <img [src]="cake.img" alt="">
+                <img [src]="cake.img" alt="" style=" width: 100%; height: 20dvi; object-fit: cover;">
               </div>
               <div class="product-details">
                 <h4>{{ cake.name }}</h4>
