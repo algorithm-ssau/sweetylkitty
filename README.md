@@ -38,8 +38,9 @@ https://nodejs.org/en
 * Создайте базу данных swettie-kitty
 
 5. Перейдите в папку C:\Users\vlad\Desktop\sweetylkitty\site\main>
+   Пропишите в консоль 
 ```
-Пропешите в консоль 
+
 python manage.py makemigrations PostgresBD
 python manage.py migrate PostgresBD
 python manage.py runserver
